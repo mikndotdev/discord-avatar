@@ -7,6 +7,10 @@ const app = new Hono<{ Bindings: Bindings }>();
 
 app.use(cors());
 
+app.get("/", (c) => {
+	return c.redirect("https://github.com/mikndotdev/discord-avatar", 302);
+});
+
 app.get("/:id", async (c) => {
 	const id = c.req.param("id");
 	const resolution = c.req.query("resolution") || "1024";
