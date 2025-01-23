@@ -31,7 +31,7 @@ app.get("/:id", async (c) => {
 				return null;
 			}
 			console.log(res);
-			const data = (await res.json()) as { username: string; avatar: string };
+			const data = (await res.json()) as { avatar: string };
 			const avatar = data.avatar;
 			await redis.set(id, avatar, { ex: 60 });
 			return avatar;
