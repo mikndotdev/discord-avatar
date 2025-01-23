@@ -1,6 +1,7 @@
 # Discord Avatar Cloudflare Worker
 
 Get a user's Discord avatar by their ID.
+This worker allows CORS from any origin, and can be embedded into websites, using your Discord profile as a sort of proto-Gravatar.
 
 ### Usage
 
