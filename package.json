@@ -1,17 +1,17 @@
 {
-	"name": "discord-avatar",
-	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "wrangler deploy --minify",
-		"format": "biome format --write ."
-	},
-	"dependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@upstash/redis": "^1.34.3",
-		"hono": "^4.6.18"
-	},
-	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20250109.0",
-		"wrangler": "^3.101.0"
-	}
+    "name": "discord-avatar",
+    "scripts": {
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy --minify",
+        "format": "biome format --write ."
+    },
+    "dependencies": {
+        "@biomejs/biome": "^1.9.4",
+        "@upstash/redis": "^1.34.3",
+        "hono": "^4.6.18"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20250109.0",
+        "wrangler": "^3.101.0"
+    }
 }
