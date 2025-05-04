@@ -66,7 +66,7 @@ app.get("/server/:id", async (c) => {
             return cacheRes;
         } else {
             const res = await fetch(
-                `https://discord.com/api/v10/guilds/${id}`,
+                `https://discord.com/api/v10/guilds/${id}/preview`,
                 {
                     headers: {
                         Authorization: `Bot ${c.env.DISCORD_TOKEN}`,
